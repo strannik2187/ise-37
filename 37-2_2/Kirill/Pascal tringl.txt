@@ -1,0 +1,33 @@
+n=10
+t1={}
+t2={}
+for i=1, n do
+	s=""
+	j=1
+	while j<=n-i do
+		j=j+1
+		s=s..' '
+	end
+
+	for z=1, i do
+		if (z==1) or (z==i) then
+			s=s..'1 '
+			if i % 2 == 1 then
+				t1[z]=1
+			else
+				t2[z]=1
+			end
+		else
+			if i % 2 == 1 then
+				g=t2[z]+t2[z-1]	
+				s=s..g..' '
+				t1[z]=g
+			else
+				g=t1[z]+t1[z-1]	
+				s=s..g..' '
+				t2[z]=g
+			end
+		end
+	end
+	print(s)
+end
