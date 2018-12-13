@@ -1,0 +1,52 @@
+\documentclass[a4paper,12pt]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A, T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{titlesec}
+\titleformat
+{\chapter} % command
+[display] % shape
+{\Large} % format
+{Глава No. \ \thechapter} % label
+{0.5ex} % sep
+{
+    \rule{\textwidth}{1pt}
+    %\vspace{1ex}
+    \centering
+} % before-code
+[
+\vspace{-0.5ex}%
+\rule{\textwidth}{0.3pt}
+] % after-code
+
+\titlespacing
+{\chapter}
+{1pt}
+{-100pt}
+{1pt} 
+\title{Сборник эссе группы 37-2}
+\author{Рогачев Александр}
+\date{Абакан 2018}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\input{Chap1.txt}
+\input{Chap2.txt}
+\input{Chap3.txt}
+\input{Chap4.txt}
+\input{Chap5.txt}
+\input{Chap6.txt}
+\input{Chap7.txt}
+\input{Chap8.txt}
+\input{Chap9.txt}
+\input{Chap10.txt}
+\input{Chap11.txt}
+\input{Chap12.txt}
+\input{Chap13.txt}
+\input{Chap14.txt}
+\input{Chap15.txt}
+
+\end{document}
