@@ -1,32 +1,42 @@
+% Compile with XeLaTeX
+
 \documentclass[14pt,a4paper,twoside]{extbook}
-\usepackage[utf8]{inputenc}
+%\usepackage[utf8]{inputenc}
 \usepackage[english,russian]{babel} 
-\setcounter{secnumdepth}{0}
+\setcounter{secnumdepth}{-1}
+\usepackage{fancyhdr}
 \setcounter{tocdepth}{2}
-%\usepackage{fontspec} 
-%\defaultfontfeatures{Ligatures={TeX},Renderer=Basic} 
-%\setmainfont[Ligatures={TeX,Historic}]{Times New Roman}
+\usepackage{fontspec} 
+\defaultfontfeatures{Ligatures={TeX},Renderer=Basic} 
+\setmainfont[Ligatures={TeX,Historic}]{PT Serif}
+\setmonofont{Consolas}
 \begin{document}
 	\begin{titlepage}
 		\begin{center}
-			\large{Тут может быть надо моё имя указать, но я стесняюсь}
+			\large{Что здесь писать?}
 			\vfill \vfill
+			\Large{Андрей Кот}\\
 			\Huge{\textbf{Почему мы пошли в IT}}
-			\vfill
-			\huge{Недоделанный сборник эссе \\ студентов групп 37-1, 37-2}
+			
+			\large\textit{Сборник эссе студентов группы 37-1}
 			\vfill
 			\large{Орфография и пунктуация авторов сохранены}
 			\vfill \vfill \vfill \vfill \vfill
-			\large{Наверное 2018 г.}
+			\large{2018 г.}
 		\end{center}
 	\end{titlepage}
 
-	\setcounter{page}{2}
 
+	\pagestyle{fancy}
+	\fancyhead{}
+	\renewcommand{\headrulewidth}{0 mm}
+	\fancyfoot[CO]{\thepage}
+
+	\setcounter{page}{2}
 	\tableofcontents
-	
+
 	\newcommand{\essay}[3]{
-		\subsection{#1}
+		\section{#1}
 		\nopagebreak[4]
 		\noindent\texttt{http://github.com/#2}
 		
@@ -36,23 +46,18 @@
 		\nopagebreak[4]	
 		\input{#2}		
 	}
-	
-	\chapter{Группа 37-1}
-		\section{Подгруппа 1}		
+
+		\chapter{Подгруппа 1}		
 			\essay{Аяс Боргояков}{Anoque}{Почему я выбрал IT?}
 			\essay{Андрей Кот}{cotheq}{Зачем я пошел в IT}
 			\essay{Иван Гриднев}{GitHubUser228}{Эссе почему я выбрал IT}		
 			\essay{Борис Палаш}{lokokoha}{Why did I come in IT?}		
 			\essay{Александр Шаматурин}{ashamaturin}{Эссе <<Почему я пошел в IT?>>}		
 			\essay{Никита Грузин}{xDololow}{Why did I come in IT?}
-		\section{Подгруппа 2}
+		\chapter{Подгруппа 2}
 			\essay{Виктор Чехлатов}{chekhlatov}{Почему ты пришел в IT?}
 			\essay{Андрей Эрмансон}{ErmansonAndrey}{Почему я пошел в IT}
 			\essay{Вячеслав Сазанаков}{G4M3R-X}{Эссе на тему <<Почему я пошел в IT>>}
 			\essay{Степан Мелёхин}{StepanMelehin}{Моё Эссе}
-			
-	\chapter{Группа 37-2}
-		\section{Подгруппа 1}
-		\section{Подгруппа 2}
 
 \end{document}
