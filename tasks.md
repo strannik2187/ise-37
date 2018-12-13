@@ -28,3 +28,12 @@
 - Enumerate N digits in Pi number
 12. Write screencast of compilation process and run of your program
 13. Commit screencast video to the repository.
+14. ADDITIONAL TASK (not for everyone). Write and commit as https://github.com/dmitrys99/ise-37/37-X_Y/<your github login>/time.md essay (3 pages minimum) about time management technique. Suggested techniques are:
+- GTD
+- Pomodoro
+- Pareto principle
+- ABC analysis
+- Eisenhower matrix
+- Timekeeping
+- Mind maps
+- Franklin pyramid
